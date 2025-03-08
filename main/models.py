@@ -12,11 +12,18 @@ def modalID_generator():
 
 class votingschedule(models.Model):
     department = models.TextField(choices=(
-        ('Main','Main'),
-        ('CEIT','CEIT'),
-        ('CTE','CTE'),
-        ('CAS','CAS'),
-        ('COT','COT'),
+        ('Main', 'Main'),
+        ('CEIT', 'Computing and Information Technology'),
+        ('CTE', 'Civil and Environmental Engineering'),
+        ('CAS', 'Applied Sciences'),
+        ('COT', 'Technology'),
+        ('COHES', 'Health Sciences'),
+        ('COB', 'Business and Economics'),
+        ('COE', 'Engineering'),
+        ('COED', 'Education'),
+        ('COL', 'Law'),
+        ('COA', 'Agriculture'),
+        ('COH', 'Humanities and Social Sciences'),
         ), null=True)
     start = models.DateField()
     end = models.DateField()
